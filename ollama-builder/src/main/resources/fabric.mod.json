@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "ollama_builder",
+  "version": "${version}",
+  "name": "Ollama Builder",
+  "description": "Печатаете в чат .print <описание постройки> — локальная модель Ollama возвращает JSON со списком блоков, а мод постепенно (blocksPerTick блоков за тик) возводит структуру в мире. Команда .stop отменяет текущую сборку.",
+  "authors": [
+    "com.example"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.ollamabuilder.OllamaBuilderMod"
+    ],
+    "client": [
+      "com.example.ollamabuilder.OllamaBuilderMod"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
